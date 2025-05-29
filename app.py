@@ -68,7 +68,7 @@ if archivo_dicom is not None:
         colored_rgb = cv2.cvtColor(colored, cv2.COLOR_BGR2RGB)
 
         # Visualización
-        st.image(colored_rgb, caption=f"Visualización con {tipo_imagen}", use_column_width=True)
+        st.image(colored_rgb, caption=f"Visualización con {tipo_imagen}", use_container_width=True)
 
         # Preparar descarga como PNG
         nombre_base = archivo_dicom.name.split(".")[0]
