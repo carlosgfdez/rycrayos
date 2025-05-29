@@ -42,7 +42,7 @@ if archivo_dicom is not None:
 
         # Mostrar metadatos
         st.markdown(f"**📄 Archivo cargado:** `{archivo_dicom.name}`")
-        #st.markdown(f"**🧾 NHC:** `{getattr(ds, 'PatientID', 'Desconocido')}`")
+        st.markdown(f"**🧾 NHC:** `{getattr(ds, 'PatientID', 'Desconocido')}`")
         st.markdown(f"**🩻 Modalidad:** `{getattr(ds, 'Modality', 'N/A')}`")
         st.markdown(f"**📐 Tamaño:** `{img.shape}`")
         st.markdown(f"**🖼️ Tipo de imagen:** `{tipo_imagen}`")
